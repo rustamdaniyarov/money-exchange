@@ -14,11 +14,12 @@ module.exports = function makeExchange(currency) {
 	res.Q = Math.floor((currency - res.H * 50)/25);
 	res.D = Math.floor((currency - (res.H * 50 + res.Q * 25))/10);
 	res.N = Math.floor((currency - (res.H * 50 + res.Q * 25 + res.D * 10))/5);
-	res.P = Math.floor((currency - (res.H * 50 + res.Q * 25 + res.D * 10 + res.N * 5))/1);
+	res.P = Math.floor((currency - (res.H * 50 + res.Q * 25 + res.D * 10 + res.N * 5))/1);	
 	}
 	for (let i in res) {
         if (res[i]===0) {
             delete res[i];
-	}
-	return res;
+        }
+    }
+	return res;	
 }
