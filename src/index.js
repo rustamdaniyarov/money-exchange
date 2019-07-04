@@ -33,6 +33,6 @@ module.exports = function makeExchange(currency) {
 		t = t + "\"P\":" + P;
 	}}
 	//if (t.length>0)t = t + " ";
-	t = "{" + t + "}";
+	//t = "{" + t + "}";
 	return t;
 }
