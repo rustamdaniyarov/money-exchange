@@ -1,7 +1,7 @@
 // PLEASE DON'T change function name
 module.exports = function makeExchange(currency) {
     let res = {
-		"H":0,
+	"H":0,
         "D":0,
         "Q":0,
         "N":0,
@@ -18,7 +18,6 @@ module.exports = function makeExchange(currency) {
 	for (let i in res) {
         if (res[i]===0) {
             delete res[i];
-        }
-    }
+	}
 	return res;
 }
